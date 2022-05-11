@@ -25,13 +25,10 @@ public class Airport {
     private String name;
     private String iata;
 
-
-
     @OneToMany(mappedBy = "takeoff")
     private Set<Flight> departures;
 
     @OneToMany(mappedBy = "landing")
     private Set<Flight> arrivals;
-
 
 }
