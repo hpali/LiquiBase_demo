@@ -31,4 +31,7 @@ public class Airport {
     @OneToMany(mappedBy = "landing")
     private Set<Flight> arrivals;
 
+    @ManyToOne(fetch = FetchType.LAZY)
+    private Address address;
+
 }
